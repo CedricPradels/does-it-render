@@ -1,13 +1,19 @@
 # Does it render?
 
+[Website](https://sharp-franklin-72fb84.netlify.app)
+
 The goal of this project is to provide a game like website that help to understand when react render and when dependencies hooks where replayed.
 
 ## Milestones
 
-1. [Init project](#init-project)
-2. Deploy project
-3. Find the funniest way to show renders
-4. Write examples
+- [Does it render?](#does-it-render)
+  - [Milestones](#milestones)
+  - [Init project](#init-project)
+  - [Deploy project](#deploy-project)
+  - [Manage renders](#manage-renders)
+  - [Start project](#start-project)
+    - [Development](#development)
+    - [Production](#production)
 
 ## Init project
 
@@ -18,6 +24,15 @@ The goal of this project is to provide a game like website that help to understa
 - [x] Init Webpack config
 - [x] Init React config
 - [x] Write project documentation
+
+## Deploy project
+
+One shot!
+
+## Manage renders
+
+- [x] Write useRender
+- [ ] Write useBoolean, then useRender
 
 ## Start project
 
