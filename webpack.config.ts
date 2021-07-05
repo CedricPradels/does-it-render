@@ -1,10 +1,10 @@
 import path from "path";
 import { Configuration } from "webpack";
+import { TsconfigPathsPlugin } from "tsconfig-paths-webpack-plugin";
 
 const config: Configuration = {
   mode: "production",
   entry: ["react-hot-loader/patch", "./src/index.ts"],
-  target: "node",
   output: {
     path: path.resolve(__dirname, "public/dist"),
     filename: "index.js",
@@ -15,6 +15,7 @@ const config: Configuration = {
     alias: {
       "react-dom": "@hot-loader/react-dom",
     },
+    plugins: [new TsconfigPathsPlugin()],
   },
   module: {
     rules: [
@@ -24,12 +25,13 @@ const config: Configuration = {
       },
     ],
   },
-  //   devtool: "inline-source-map",
+  devtool: "inline-source-map",
   devServer: {
     index: "index.html",
     open: true,
     hot: true,
     contentBase: path.resolve(__dirname, "public"),
+    publicPath: "/dist/",
     compress: true,
   },
 };

@@ -6,7 +6,6 @@ const App = hot(() => {
   return (
     <StrictMode>
       <Reset />
-      <div>toto</div>
     </StrictMode>
   );
 });
