@@ -1,12 +1,20 @@
 import { hot } from "react-hot-loader/root";
-import React, { StrictMode, useState } from "react";
+import React from "react";
 import { Reset } from "styled-reset";
+import { Element } from "@components/Element";
 
 const App = hot(() => {
   return (
-    <StrictMode>
+    <>
       <Reset />
-    </StrictMode>
+      <Element label="Parent">
+        <Element label="Child">
+          <Element label="SubChild" />
+          <Element label="SubChild" />
+        </Element>
+        <Element label="Child" />
+      </Element>
+    </>
   );
 });
 

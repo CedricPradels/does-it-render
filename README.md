@@ -32,7 +32,7 @@ One shot!
 ## Manage renders
 
 - [x] Write useRender
-- [ ] Write useBoolean, then useRender
+- [x] Write useBoolean, then useRender
 
 ## Start project
 
